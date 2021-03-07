@@ -1,2 +1,2 @@
 # Fatec-Eletrônica-1600732023010-Emerson
-Repositório do Emerson Evangelista projetos da Fatec
+Repositório Emerson Evangelista Disciplina de Programação do Curso Eletrônico Automotivo da Fatec Santo André
