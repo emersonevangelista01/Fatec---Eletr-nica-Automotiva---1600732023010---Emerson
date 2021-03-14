@@ -1,0 +1,54 @@
+/*1- A partir de fluxograma ao lado. Pede-se:
+b) Código em C
+autor:EE01*/
+
+
+
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  int e_nro_1, e_nro_2,e_nro_3;
+  printf("\n\nAtividade 01");
+  printf("\nDigite um valor N1: ");
+  scanf("%d", &e_nro_1); 
+  printf("\nDigite um valor N2: ");
+  scanf("%d", &e_nro_2);
+  printf("\nDigite um valor N3: ");
+  scanf("%d", &e_nro_3);
+ 
+  if (e_nro_1 > e_nro_2){
+    if(e_nro_1 > e_nro_3){
+      printf("\n%d",e_nro_3);
+      printf("\n%d",e_nro_2);
+      printf("\n%d",e_nro_1);
+    }else{
+      if(e_nro_1 > e_nro_3){
+        printf("\n%d",e_nro_2);
+        printf("\n%d",e_nro_3);
+        printf("\n%d",e_nro_1);
+      }else{
+        printf("\n%d",e_nro_2);
+        printf("\n%d",e_nro_1);
+        printf("\n%d",e_nro_3);
+      }
+    }
+  }
+  else{
+    if(e_nro_1 > e_nro_3){
+        printf("\n%d",e_nro_3);
+        printf("\n%d",e_nro_1);
+        printf("\n%d",e_nro_2);
+      }else{
+        if(e_nro_2 > e_nro_3){
+            printf("\n%d",e_nro_1);
+            printf("\n%d",e_nro_3);
+            printf("\n%d",e_nro_2);
+          }else{
+            printf("\n%d",e_nro_1);
+            printf("\n%d",e_nro_2);
+            printf("\n%d",e_nro_3);
+          } 
+        }
+      }
+  return(0);
+}
