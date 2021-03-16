@@ -1,0 +1,28 @@
+/*
+5- Tendo como dados de entrada a altura e o sexo (Sexo=0 para feminino ou Sexo=1 para masculino) de uma 
+pessoa, calcule e mostre seu peso ideal, utilizando as seguintes fórmulas: 
+- para sexo masculino: peso ideal = (72.7 * altura) – 58
+- para sexo feminino: peso ideal = (62.1 * altura) - 44.7 
+*/
+
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+
+float e_altura, e_sexo, s_pesoIdeal;
+printf("digite o valor da altura:");
+scanf("%f",&e_altura);
+printf("digite 0 - feminino ou 1 - masculino:");
+scanf("%f",&e_sexo);
+if (e_sexo==0){
+  s_pesoIdeal=((62.1 * e_altura)-44.7);
+  printf ("\npeso ideal: %.2f %s \n", s_pesoIdeal,"Kg");
+  } else if (e_sexo==1){
+    s_pesoIdeal=((72.7 * e_altura)-58);
+    printf ("\npeso ideal: %.2f %s \n", s_pesoIdeal,"Kg");
+  } else{
+  printf("\nValor inválido!");
+  }
+  
+  return 0;
+}
