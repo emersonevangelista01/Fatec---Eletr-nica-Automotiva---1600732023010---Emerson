@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+  int e_valorA,e_valorB,varA, varB;
+  printf("digite o valor de A: \n");
+  scanf("%d",&e_valorA);
+  printf("digite o valor de B: \n");
+  scanf("%d",&e_valorB);
+ varA=e_valorB, varB=e_valorA;
+  printf ("Variável_A recebe valor de B: %d\n", varA);
+  printf ("Variável_B recebe valor de A: %d\n", varB);
+  return 0;
+}
