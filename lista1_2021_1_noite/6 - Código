@@ -1,0 +1,52 @@
+/*
+6- Desenvolva o programa que calcule a resistência de um fio. O usuário deve inserir o diâmetro, o comprimento e o material do fio, a temperatura de uso.
+*/
+
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+  int e_Materialfio;
+  float e_diametro, e_comprimento,e_temperatura,area, s_Resistencia,Resistividade;
+  printf("\n\nTendo: 5 materiais disponíveis para uso: \n1 Prata \n2 Cobre \n3 Ouro \n4 Alumínio \n5 Tungstênio: \n");
+  printf("digite o tipo do material:");
+  scanf("%d",&e_Materialfio);
+  printf("digite o valor do Diâmetro[mm]:");
+  scanf("%f",&e_diametro);
+  printf("digite o valor do Comprimento [cm]:");
+  scanf("%f",&e_comprimento);
+  printf("digite o valor da temperatura [°C]:");
+  scanf("%f",&e_temperatura);
+  e_diametro=e_diametro/1000;
+  e_comprimento=e_comprimento/100;
+  area=(3.141592654*e_diametro*e_diametro)/4;
+  switch (e_Materialfio){
+case 1 :
+Resistividade=0.00000157 *((1+0.038*(e_temperatura-20)));
+s_Resistencia=(Resistividade*e_comprimento)/area;
+printf ("\nResistência do fio: %f %s \n", s_Resistencia,"ohms");
+  break;
+case 2 :
+Resistividade=0.00000172 *((1+0.039*(e_temperatura-20)));
+s_Resistencia=(Resistividade*e_comprimento)/area;
+printf ("\nResistência do fio: %f %s \n", s_Resistencia,"ohms");
+  break;
+case 3 :
+Resistividade=0.00000244 *((1+0.034*(e_temperatura-20)));
+s_Resistencia=(Resistividade*e_comprimento)/area;
+printf ("\nResistência do fio: %f %s \n", s_Resistencia,"ohms");
+  break;
+case 4 :
+Resistividade=0.00000292 *((1+0.039*(e_temperatura-20)));
+s_Resistencia=(Resistividade*e_comprimento)/area;
+printf ("\nResistência do fio: %f %s \n", s_Resistencia,"ohms");
+  break;
+case 5 :
+Resistividade=0.0000056 *((1+0.045*(e_temperatura-20)));
+s_Resistencia=(Resistividade*e_comprimento)/area;
+printf ("\nResistência do fio: %f %s \n", s_Resistencia,"ohms");
+  break;
+default:
+printf("\ninválido"); break;
+}
+  return 0;
+}
