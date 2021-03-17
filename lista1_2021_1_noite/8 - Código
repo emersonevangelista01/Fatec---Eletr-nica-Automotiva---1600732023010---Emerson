@@ -1,0 +1,20 @@
+/*
+8 - código que calcule a resistência equivalente de 4 resistores em paralelo
+*/
+
+#include <stdio.h>
+
+int main(void) {
+  float out_resistEq, in_R1, in_R2, in_R3, in_R4;
+  printf("digite o valor do Resistor 1º [Ohms]: \n");
+  scanf("%f",&in_R1);
+  printf("digite o valor do Resistor 2º  [Ohms]: \n");
+  scanf("%f",&in_R2);
+  printf("digite o valor do Resistor 3º [Ohms]: \n");
+  scanf("%f",&in_R3);
+  printf("digite o valor do Resistor 4º  [Ohms]: \n");
+  scanf("%f",&in_R4);
+  out_resistEq = ((1/in_R1)+(1/in_R2)+(1/in_R3)+(1/in_R4));
+  printf ("Resultado ResistEquivalent: %.2f %s \n", out_resistEq,"Ohms");
+  return 0;
+}
