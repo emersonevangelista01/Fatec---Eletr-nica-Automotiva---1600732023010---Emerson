@@ -1,0 +1,25 @@
+#include <stdio.h>
+//3 - Desenvolva um sistema que ordene a sequencia de 5 números aleatórios de forma decrescente.
+//EE RA 1600732023010
+int main(void) {
+  int aux,x,y, vetor[5];
+  for (aux=0;aux<5;aux++){
+    printf("entre com os nros:");
+    scanf("%d",&vetor[aux]);   
+  }
+  for (x=0;x<=5-x;x++){
+    for(y=0;y<=5-1-x;y++){
+      if(vetor[y] < vetor[y+1]){
+        aux=vetor[y];
+        vetor[y]=vetor[y+1];
+        vetor[y+1]= aux;
+      }
+    }
+  }
+  for (aux=0;aux<5;aux++){
+    printf("\nNro %d ",aux);
+    printf(" Vetor %d\n",vetor[aux]);
+  }
+  printf("\n\nfim\n");
+  return 0;
+}
