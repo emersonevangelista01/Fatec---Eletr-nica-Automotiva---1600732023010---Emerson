@@ -1,0 +1,22 @@
+#include <stdio.h>
+//5 - Desenvolva um sistema que monitore a temperatura do radiador, caso atinja a temperatura de 90oC, a ventoinha deve ser acionada, até atingir a temperatura de 70oC, para ser desligado.
+//EE 1600732023010
+int main(void) {
+  int temp;
+  while(1){
+      printf("\n\nIndique qual a temperatura: ");
+      scanf("%d", &temp);
+      
+      if(temp>=90){
+        while(temp>70){
+          printf("\nVentoinha ligada  %d%s",temp,"°C");
+          temp--;  
+        } 
+      }
+      if(temp<=70||temp<90){
+        printf("\ntemperarura: %d%s",temp,"°C");
+        printf("\nVentoinha desligada ");  
+      }
+    }
+  return 0;
+}
