@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <unistd.h>
+//4- Pisca- pisca de 0,5Hz sleep(2) 2 segundos
+//EE 1600732023010
+int main(void) {
+  int e_btn_seta; 
+  while (1){
+    printf("Seta 0 - desligado; 1 - ligado: ");
+    scanf("%d",&e_btn_seta);
+    if (e_btn_seta==1){
+    printf("Lampada Aceso.\n");
+    sleep(2);
+    printf("Lampada Apagada.\n");
+    sleep(2);
+    printf("Lampada Aceso.\n");
+    sleep(2);
+    printf("Lampada Apagada.\n");
+    sleep(2);
+    }else{
+      break;
+    }
+  }
+  return 0;
+}
