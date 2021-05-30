@@ -21,5 +21,6 @@ int main(void) {
     printf(" Vetor %d\n",vetor[aux]);
   }
   printf("\n\nfim\n");
+  
   return 0;
 }
