@@ -1,0 +1,22 @@
+#include <stdio.h>
+//2- Desenvolva um sistema que conte de 100 a 999 (inclusive) e exiba, um por linha, o produto dos três dígitos dos números.
+//EE RA1600732023010
+int main(void) {
+int cont=100, aux, resto, produto; 
+
+  while(cont>99 && cont<1000){
+  aux=cont;
+  produto=1;
+    
+    while(aux>0){
+      resto=aux%10;
+      produto=produto*resto;
+      aux = aux/10;
+    }
+    printf("\n %d   ",produto);
+    printf("\t %d",cont);
+    cont++; 
+  }
+ printf("\n\nfim\n");
+  return 0;
+}
